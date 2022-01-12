@@ -59,7 +59,7 @@ namespace Simple_Base_Code
                         }
 
                     }
-                    Console.WriteLine("correctPos {0}, correctLetter {1}, badLetter {2}", correctPos, correctLetter, badLetter);
+                    Console.WriteLine("correct position {0}, correct letter {1}, bad letter {2}", correctPos, correctLetter, badLetter);
                     return false;
                 }
             }
