@@ -120,25 +120,8 @@ namespace Simple_Base_Code
 
 
 		}
-            Console.WriteLine("Hello, Class!");
-            Mastermind mastermindgame = new Mastermind("ihateella");
-            while(mastermindgame.completed == false)
-            {
-                Console.WriteLine("Enter a String of {0} characters", password.Length);
-                string guess = Console.ReadLine();
-                mastermindgame.guess(guess);
-            }
-        }
+          
+			
+           
     }
 }
-			Console.WriteLine("Hello, Class!");
-			Mastermind mastermindgame = new Mastermind("coolio");
-			while (mastermindgame.completed == false)
-			{
-				string guess = Console.ReadLine();
-				mastermindgame.guess(guess);
-			}
-		}
-           
-        }
-    }
