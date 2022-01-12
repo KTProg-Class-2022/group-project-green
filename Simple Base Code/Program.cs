@@ -118,15 +118,14 @@ namespace Simple_Base_Code
 			Item mayo = new Item("Mayo?", "A can of what you think is mayonase. You dont want to taste it", 3, true);
 			Item paking = new Item("Box", "A box with a label that says Bosnian Roulette.", 3, true);
 
-
+			Console.WriteLine("Hello, Class!");
+			Mastermind mastermindgame = new Mastermind("coolio");
+			while (mastermindgame.completed == false)
+			{
+				string guess = Console.ReadLine();
+				mastermindgame.guess(guess);
+			}
 		}
-            Console.WriteLine("Hello, Class!");
-            Mastermind mastermindgame = new Mastermind("coolio");
-            while(mastermindgame.completed == false)
-            {
-                string guess = Console.ReadLine();
-                mastermindgame.guess(guess);
-            }
+           
         }
     }
-}
