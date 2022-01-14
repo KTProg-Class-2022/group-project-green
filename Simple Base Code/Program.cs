@@ -4,71 +4,6 @@ namespace Simple_Base_Code
 {
     class Program
     {
-		class Item
-		{
-			private string _name;
-			private string _description;
-			private int _roomid;
-			private bool _herring;
-
-			public Item(string n, string d, int r, bool h)
-			{
-				_name = n;
-				_description = d;
-				_roomid = r;
-				_herring = h;
-			}
-			public string Name
-			{
-				get
-				{
-					return _name;
-				}
-				set
-				{
-					_name = value;
-				}
-			}
-
-			public string Description
-            {
-                get
-                {
-					return _description;
-                }
-                set
-                {
-					_description = value;
-                }
-            }
-
-
-			public int RoomID
-			{
-				get
-				{
-					return _roomid;
-				}
-				set
-				{
-					_roomid = value;
-				}
-			}
-
-			public bool Herring
-			{
-				get
-				{
-					return _herring;
-				}
-				set
-				{
-					_herring = value;
-				}
-			}
-		}
-
-
 
 		static void Main(string[] args)
         {
@@ -118,6 +53,15 @@ namespace Simple_Base_Code
 			Item mayo = new Item("Mayo?", "A can of what you think is mayonase. You dont want to taste it", 3, true);
 			Item paking = new Item("Box", "A box with a label that says Bosnian Roulette.", 3, true);
 
+            Console.WriteLine("Hello, Class!");
+            Mastermind mastermindgame = new Mastermind("ihateella");
+            while(mastermindgame.completed == false)
+            {
+ 
+                string guess = Console.ReadLine();
+                mastermindgame.guess(guess);
+            }
+        }
 
 		}
           
