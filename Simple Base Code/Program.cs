@@ -4,6 +4,7 @@ namespace Simple_Base_Code
 {
     class Program
     {
+		//make item
 		static void makeItem(){
 			/* Room One */
 			Item nokia = new Item("Nokia Phone", "A Nokia Phone that is not even in production anymore.", 0, false);
