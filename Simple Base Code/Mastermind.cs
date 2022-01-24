@@ -14,12 +14,14 @@ namespace Simple_Base_Code
         //call this class with the word to initialize the mastermind game
         public Mastermind(string theWord)
         {
+            theWord = theWord.ToLower();
             password = theWord;
             completed = false;
           
         }
         public bool guess(string guessedWord)
         {
+            guessedWord = guessedWord.ToLower();
             if(guessedWord.Length == password.Length) {
                 array = new int[password.Length];
                 array2 = new int[password.Length];
