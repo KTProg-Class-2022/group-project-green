@@ -4,6 +4,7 @@ using System.Text;
 
 namespace Simple_Base_Code
 {
+    //class for mastermind
     class Mastermind
     {
         private string password;
