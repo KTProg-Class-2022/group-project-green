@@ -13,6 +13,25 @@ namespace Simple_Base_Code
             ItemArray = new Item[5];
             i = 0;
         }
+        public void printItems()
+        {
+            for (i = 0; i < ItemArray.Length; i++)
+            {
+                Console.WriteLine(ItemArray[i].Name);
+            }
+        }
+
+        public void printDescription(string name)
+        {
+            for (i = 0; i < ItemArray.Length; i++)
+            {
+
+                if(ItemArray[i].Name == name)
+                {
+                    Console.WriteLine(ItemArray[i].Name);
+                }
+            }
+        }
         public void addObject(Item itemToAdd)
         {
             if (i >= 5)
