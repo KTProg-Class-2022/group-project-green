@@ -7,18 +7,9 @@ namespace Simple_Base_Code
 
 		static void Main(string[] args)
 		{
-			/* Room One */
-			Item nokia = new Item("Nokia Phone", "A Nokia Phone that is not even in production anymore.", 0, false);
-			Item ransom = new Item("Ransomware Computer", "A computer that is infected with ransomware.", 0, false);
-			Item printer = new Item("Printer", "A printer that broke a while ago.", 0, false);
-			Item phoneBook = new Item("Phone Book", "A book that contains all of your most resent calls. Most are tech support angents.", 0, false);
-			Item teaCup = new Item("Tea Cup", "A mysterious cup of tea. It could give good fortune to those who drink it.", 0, true);
-			Item hair = new Item("Hair", "A strand of hair.", 0, true);
-			Item spider = new Item("Spider", "A spider that has hid in the janitors cart. He stares at you with his big eyes", 0, true);
-			Item eviction = new Item("Eviction Notice", "An eviction notice. You have been ignoring it since it was mailed to you.", 0, true);
-			Item flashlight = new Item("Flashlight", "A flashlight. You remember using it recently.", 0, true);
+			
 
-			/* RoomOne */
+			/* Room One */
 			Item cipherBook = new Item("Caesar's Cipher Book", "A huge book about ancient Roman encryption. Looks large enough to have a secret compartment, but is stuck closed.", 1, false);
 			Item cryptographyBook = new Item("Cryptography Book", "A book about Cryptography. Smells like old book.", 1, false);
 			Item ntfsBook = new Item("NTFS Book", "A book about NTFS. I don't know what NTFS stands for.", 1, false);
