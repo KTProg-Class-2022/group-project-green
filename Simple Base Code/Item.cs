@@ -4,6 +4,34 @@ using System.Text;
 
 namespace Simple_Base_Code
 {
+	class Commands
+    {
+        //nick ge the ability for us to input commands from console working. That Is all Very Cool
+        public Commands()
+        {
+
+        }
+
+        public void addItem()
+        {
+           
+        }
+        public void BosnianRoulette()
+        {
+            //Vaansh will work on this
+        }
+
+        public void selectRoom()
+        {
+            //future command
+        }
+
+        public void StartMastermind()
+        {
+            //bruno
+        }
+
+    }
     class Item
     {
 		private string _name;
@@ -66,5 +94,10 @@ namespace Simple_Base_Code
 				_herring = value;
 			}
 		}
+
+		public void PrintItem()
+        {
+			Console.WriteLine(_name + ". " + _description + " From room " + _roomid);
+        }
 	}
 }
