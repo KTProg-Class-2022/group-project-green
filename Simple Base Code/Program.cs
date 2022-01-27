@@ -5,9 +5,6 @@ namespace Simple_Base_Code
     class Program
     {
 
-		static void Main(string[] args)
-        {
-			/* Tutorial Room/Janitor Room */
 		//make item
 		static void makeItem(){
 			/* Room One */

@@ -7,7 +7,7 @@ namespace Simple_Base_Code
     //class for mastermind
     class Mastermind
     {
-        private string password;
+        public string password;
         public bool completed;
         int[] array;
         int[] array2;
