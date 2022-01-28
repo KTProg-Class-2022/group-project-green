@@ -69,6 +69,7 @@ namespace Simple_Base_Code
 
 		static void Main(string[] args)
         {
+			Commands commands = new Commands();
 			makeItem();
 			Console.WriteLine("Enter a password(for mastermind test) :");
 			string password = Console.ReadLine();
@@ -79,6 +80,8 @@ namespace Simple_Base_Code
                 string guess = Console.ReadLine();
                 mastermindgame.guess(guess);
             }
+			commands.BosnianRoulette(mastermindgame);
+			
         }
     }
 }

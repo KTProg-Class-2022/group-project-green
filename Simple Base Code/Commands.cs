@@ -20,7 +20,7 @@ namespace Simple_Base_Code
         {
             //Vaansh will work on this
             Random random = new Random();
-            int num = random.Next(0, 1);
+            int num = random.Next(0, 2);
             if (num == 0)
             {
                 Console.WriteLine("first three letters of mastermind password is :{0}, {1}, {2}", mastermind.password[0], mastermind.password[1], mastermind.password[2]);
@@ -28,6 +28,8 @@ namespace Simple_Base_Code
             }
             else
             {
+                //if false it will be a death statement later
+                Console.WriteLine("you died");
                 return false;
             }
 
