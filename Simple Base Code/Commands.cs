@@ -40,15 +40,16 @@ namespace Simple_Base_Code
         {
             //future command
         }
-        Mastermind mastermind; 
-        public void StartMastermind(string password)
+        Mastermind mastermind;
+        //i just realized start mastermind should be in the  room object so ignore code
+        /*public void StartMastermind(string password)
         {
             //bruno
             mastermind = new Mastermind(password);
             playMastermind(mastermind);
 
 
-        }
+        }*/
         public bool playMastermind(Mastermind mastermind)
         {
             while (true)
@@ -63,7 +64,7 @@ namespace Simple_Base_Code
                 {
                     if (mastermind.guess(guess))
                     {
-                        return false;
+                        return true;
                     }
                 }
             }

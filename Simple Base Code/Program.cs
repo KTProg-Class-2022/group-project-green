@@ -79,7 +79,11 @@ namespace Simple_Base_Code
                 string guess = Console.ReadLine();
                 mastermindgame.guess(guess);
             }
-			commands.BosnianRoulette(mastermindgame);
+			for (int i = 0; i < 100; i++)
+			{
+				commands.BosnianRoulette(mastermindgame);
+			}
+			
 			
         }
     }
