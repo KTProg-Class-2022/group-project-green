@@ -62,21 +62,20 @@ namespace Simple_Base_Code
 			inventory.addObject(mayo);
 
 
-
-
+			nokia.PrintItem();
+			peanuts.PrintItem();
+			cryptographyBook.PrintItem();
 		}
-
-
+			
 		static void Main(string[] args)
         {
 			Commands commands = new Commands();
 			makeItem();
+			
 			Console.WriteLine("Enter a password(for mastermind test) :");
 			string password = Console.ReadLine();
-            Mastermind mastermindgame = new Mastermind(password);
-            while(mastermindgame.completed == false)
-            {
- 
+			Mastermind mastermindgame = new Mastermind(password);
+			while(mastermindgame.completed == false) {
                 string guess = Console.ReadLine();
                 mastermindgame.guess(guess);
             }
