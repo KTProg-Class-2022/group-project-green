@@ -19,6 +19,10 @@ namespace Simple_Base_Code
             completed = false;
           
         }
+        public int getLength()
+        {
+            return password.Length;
+        }
         public bool guess(string guessedWord)
         {
             guessedWord = guessedWord.ToLower();

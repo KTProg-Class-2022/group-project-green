@@ -51,16 +51,44 @@ namespace Simple_Base_Code
             {
                 Console.WriteLine("Enter a command or Guess a word help to see commands");
                 string input = Console.ReadLine();
-                if(input == "help")
+
+                switch(input)
                 {
-                    Console.WriteLine("mastermindlength- sees how many characters the mastermind game is");
-                    Console.WriteLine("check items - get list of items");
+                    case "help":
+                        Console.WriteLine("mastermind-length : sees how many characters the mastermind game is");
+                        Console.WriteLine("check-items : get list of items");
+                        break;
+                    case "mastermind-length":
+                        Console.WriteLine("{0}", mastermindgame.getLength());
+                        break;
+                    case "check-items":
+                        break;
+
+                    default:
+                        if (mastermindgame.guess(input) == true)
+                        {
+                            finishedThis = true;
+                        }
+                        break;
+                }
+
+
+
+
+                /*if(input == "help")
+                {
+                    Console.WriteLine("mastermind-length : sees how many characters the mastermind game is");
+                    Console.WriteLine("check-items : get list of items");
                     //will implement commands tommrow
+                }
+                else if(input == "mastermind-length")
+                {
+                    Console.WriteLine("{0}", mastermindgame.getLength());
                 }
                 else if (mastermindgame.guess(input) == true)
                 {
                     finishedThis = true;
-                }
+                }*/
             }
 
 
