@@ -139,22 +139,26 @@ namespace Simple_Base_Code
             printSlowly("The second door has a sign in front that says Buy Crypto Here.");
             printSlowly("The last door has an advertisement for a new gaming console.");
             printSlowly("What door will you pick?");
-            roomNum = int.Parse(Console.ReadLine());
-            if (roomNum == 1)
+
+
+            if (Int32.TryParse(Console.ReadLine(), out roomNum))
             {
-                printSlowly("You enter the first room.");
-            }
-            else if (roomNum == 2)
-            {
-                printSlowly("You enter the second room.");
-            }
-            else if (roomNum == 3)
-            {
-                printSlowly("You enter the third room.");
-            }
-            else
-            {
-                printSlowly("Invalid number. Try again.");
+                if (roomNum == 1)
+                {
+                    printSlowly("You enter the first room.");
+                }
+                else if (roomNum == 2)
+                {
+                    printSlowly("You enter the second room.");
+                }
+                else if (roomNum == 3)
+                {
+                    printSlowly("You enter the third room.");
+                }
+                else
+                {
+                    printSlowly("Invalid number. Try again.");
+                }
             }
         }
 
