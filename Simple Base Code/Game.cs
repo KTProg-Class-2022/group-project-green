@@ -7,7 +7,9 @@ namespace Simple_Base_Code
     public class Game
     {
 
-
+        //enable slow mode
+        //if false will make text go fast
+        bool slowMode = false;
 
 
         public Game()
@@ -16,7 +18,7 @@ namespace Simple_Base_Code
         }
         public void StartGame()
         {
-            Tutorial tutorial = new Tutorial();
+            Tutorial tutorial = new Tutorial(slowMode);
         }
     }
     

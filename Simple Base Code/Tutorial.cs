@@ -12,7 +12,7 @@ namespace Simple_Base_Code
 
     class Tutorial
     {
-
+        bool Slowmode;
         Item nokia = new Item("Nokia Phone", "A Nokia Phone that is not even in production anymore.", 0, false);
         Item ransom = new Item("Ransomware Computer", "A computer that is infected with ransomware.", 0, false);
         Item printer = new Item("Printer", "A printer that broke a while ago.", 0, false);
@@ -24,33 +24,40 @@ namespace Simple_Base_Code
         Item flashlight = new Item("Flashlight", "A flashlight. You remember using it recently.", 0, true);
         
 
-        public static void printSlowly(string String)
+        public void printSlowly(string String)
         {
-            Console.SetCursorPosition(Console.CursorLeft, Console.CursorTop - 1);
-            string stringy = "Press any key to continue";
-            for(int i =0; i < stringy.Length; i++)
+            if (Slowmode)
             {
-                Console.Write(" ");
+                Console.SetCursorPosition(Console.CursorLeft, Console.CursorTop - 1);
+                string stringy = "Press any key to continue";
+                for (int i = 0; i < stringy.Length; i++)
+                {
+                    Console.Write(" ");
+                }
+                Console.WriteLine("");
+                Console.SetCursorPosition(Console.CursorLeft, Console.CursorTop - 1);
+
+
+                for (int i = 0; i < String.Length; i++)
+                {
+                    Console.Write(String[i]);
+                    System.Threading.Thread.Sleep(50);
+                }
+                Console.WriteLine("");
+                Console.WriteLine("Press any key to continue");
+
+
+                Console.ReadKey();
             }
-            Console.WriteLine("");
-            Console.SetCursorPosition(Console.CursorLeft, Console.CursorTop - 1);
-
-
-            for (int i = 0; i < String.Length; i++)
+            else
             {
-                Console.Write(String[i]);
-                System.Threading.Thread.Sleep(50);
+                Console.WriteLine(String);
             }
-            Console.WriteLine("");
-            Console.WriteLine("Press any key to continue");
-
-
-            Console.ReadKey();
         }
 
-        public Tutorial()
+        public Tutorial(bool slowmode)
         {
-            
+            Slowmode = slowmode;
 
             int roomNum;
             Console.WriteLine();
