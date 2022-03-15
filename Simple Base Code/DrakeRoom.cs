@@ -7,6 +7,7 @@ namespace Simple_Base_Code
 
     class DrakeRoom
     {
+        int roomNum;
         bool Slowmode;
         public void printSlowly(string String)
         {
@@ -41,7 +42,7 @@ namespace Simple_Base_Code
 
 
 
-        public DrakeRoom(bool slowMode)
+        public DrakeRoom(bool slowMode, bool[] roomsCompleted)
         {
             Slowmode = slowMode;
             printSlowly("You walk into the back of the nearby concert venue. ");
@@ -84,6 +85,80 @@ namespace Simple_Base_Code
             printSlowly("The next day, you challenge him to a rap battle inside the venue, with his family and most of the city in attendance. ");
             printSlowly("With his most recent exposure to rap music being the Drake album, his bars are cursed to be silly and wacky. ");
             printSlowly("Cringe, even. He loses devastatingly, and his very own family thinks him to be cringe now. Great success!");
+            
+            
+            
+            
+            roomsCompleted[0] = true;
+            printSlowly("You head back to where you originally saw tim bluehelmet, you look around and see three doors.");
+            printSlowly("One door has a radio next to it.");
+            printSlowly("The second door has a sign in front that says Buy Crypto Here.");
+            printSlowly("The last door has an advertisement for a new gaming console.");
+            printSlowly("What door will you pick?");
+
+
+
+            bool bad = true;
+            while (bad)
+            {
+                if (Int32.TryParse(Console.ReadLine(), out roomNum))
+                {
+                    if (roomNum == 1)
+                    {
+                        if (roomsCompleted[0] == true)
+                        {
+                            printSlowly("you were blocked by a security guard, while drake seems to know you they do not choose a different door");
+                            bad = true;
+                        }
+                        else
+                        {
+                            roomNum = 1;
+                            printSlowly("You enter the first room.");
+                            bad = false;
+                        }
+                    }
+                    else if (roomNum == 2)
+                    {
+                        if (roomsCompleted[1] == true)
+                        {
+                            printSlowly("The door is blocked by a firewall, choose a different room");
+                            bad = true;
+                        }
+                        else
+                        {
+                            printSlowly("You enter the second room.");
+                            roomNum = 2;
+                            bad = false;
+                        }
+                    }
+                    else if (roomNum == 3)
+                    {
+                        if (roomsCompleted[2] == true)
+                        {
+                            printSlowly("Due to the use of a bootleg console the police have arrived and are blocking your path, choose a different room");
+                            bad = true;
+                        }
+                        else
+                        {
+                            printSlowly("You enter the second room.");
+                            roomNum = 3;
+                            bad = false;
+                        }
+                    }
+                    else
+                    {
+                        printSlowly("Invalid number. Try again.");
+                        bad = true;
+                    }
+                }
+            }
+
+
+
+
+
+
+
 
 
 
