@@ -9,10 +9,6 @@ namespace Simple_Base_Code
     {
         int roomNum;
         bool Slowmode;
-        public int getNextRoom()
-        {
-            return roomNum;
-        }
         public void printSlowly(string String)
         {
             if (Slowmode)

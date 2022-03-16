@@ -28,18 +28,11 @@ namespace Simple_Base_Code
                     case 1:
                         DrakeRoom drakeRoom = new DrakeRoom(slowMode, roomsCompleted);
                         roomsCompleted[0] = true;
-                        nextRoom = drakeRoom.getNextRoom();
+                        nextRoom = 0;
                         break;
                     case 2:
-                        
-                        BitcoinRoom bitcoin = new BitcoinRoom(slowMode, roomsCompleted);
-                        roomsCompleted[1] = true;
-                        nextRoom = bitcoin.getNextRoom();
                         break;
                     case 3:
-                        BootlegConsoleRoom bootleg = new BootlegConsoleRoom(slowMode, roomsCompleted);
-                        roomsCompleted[2] = true;
-                        nextRoom = bootleg.getNextRoom();
                         break;
 
                     default:
