@@ -66,5 +66,10 @@ namespace Simple_Base_Code
 				_herring = value;
 			}
 		}
+
+		public void PrintItem()
+        {
+			Console.WriteLine(_name + ". " + _description + " From room " + _roomid);
+        }
 	}
 }

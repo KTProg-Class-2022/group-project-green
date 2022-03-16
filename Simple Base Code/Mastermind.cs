@@ -7,7 +7,7 @@ namespace Simple_Base_Code
     //class for mastermind
     class Mastermind
     {
-        private string password;
+        public string password;
         public bool completed;
         int[] array;
         int[] array2;
@@ -18,6 +18,10 @@ namespace Simple_Base_Code
             password = theWord;
             completed = false;
           
+        }
+        public int getLength()
+        {
+            return password.Length;
         }
         public bool guess(string guessedWord)
         {
@@ -68,6 +72,7 @@ namespace Simple_Base_Code
             }
             else
             {
+                Console.WriteLine("Input not of correct length or not a command");
                 return false;
             }
         }

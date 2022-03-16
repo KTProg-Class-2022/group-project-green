@@ -5,6 +5,18 @@ namespace Simple_Base_Code
 	class Program
 	{
 
+		//make item
+		static void makeItem(){
+			/* Room One */
+			Item nokia = new Item("Nokia Phone", "A Nokia Phone that is not even in production anymore.", 0, false);
+			Item ransom = new Item("Ransomware Computer", "A computer that is infected with ransomware.", 0, false);
+			Item printer = new Item("Printer", "A printer that broke a while ago.", 0, false);
+			Item phoneBook = new Item("Phone Book", "A book that contains all of its owner's most recent calls. Most are to tech support.", 0, false);
+			Item teaCup = new Item("Tea Cup", "A mysterious cup of tea. It could give good fortune to those who drink it.", 0, true);
+			Item hair = new Item("Hair", "A strand of hair.", 0, true);
+			Item spider = new Item("Spider", "A spider that has hid in the janitors cart. He stares at you with his big eyes", 0, true);
+			Item eviction = new Item("Eviction Notice", "An eviction notice. Whoever it's for, they've been ignoring it.", 0, true);
+			Item flashlight = new Item("Flashlight", "A flashlight. You remember using it recently. You don't know how it got here.", 0,true);
 		static void Main(string[] args)
 		{
 			/* Tutorial Room/Janitor Room */
@@ -92,4 +104,32 @@ namespace Simple_Base_Code
 			}
 		}
 	}
+}
+			nokia.PrintItem();
+			peanuts.PrintItem();
+			cryptographyBook.PrintItem();
+		}
+			
+		static void Main(string[] args)
+        {
+			/*Commands commands = new Commands();
+			makeItem();
+			
+			Console.WriteLine("Enter a password(for mastermind test) :");
+			string password = Console.ReadLine();
+			Mastermind mastermindgame = new Mastermind(password);
+			while(mastermindgame.completed == false) {
+                string guess = Console.ReadLine();
+                mastermindgame.guess(guess);
+            }
+			for (int i = 0; i < 100; i++)
+			{
+				commands.BosnianRoulette(mastermindgame);
+			}*/
+			
+			Game game = new Game();
+			game.StartGame();
+        }
+			
+    }
 }
