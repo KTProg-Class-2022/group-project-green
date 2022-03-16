@@ -44,6 +44,17 @@ namespace Simple_Base_Code
 
         public DrakeRoom(bool slowMode, bool[] roomsCompleted)
         {
+            /* Items */
+            Item cipherBook = new Item("Caesar's Cipher Book", "A huge book about ancient Roman encryption. Looks large enough to have a secret compartment, but is stuck closed.", 1, false);
+            Item cryptographyBook = new Item("Cryptography Book", "A book about Cryptography. Smells like old book.", 1, false);
+            Item ntfsBook = new Item("NTFS Book", "A book about NTFS. I don't know what NTFS stands for.", 1, false);
+            Item zodiacPoster = new Item("Zodiac Killer Poster", "A poster for some documentary about the Zodiac Killer. It's a big scan of one of his cipher letters.", 1, false);
+            Item pentLetter = new Item("Pentagon Letter", "A letter that says it's from the US Department of Defence. Looks like a page of pure gibberish.", 1, false);
+            Item emptyAlbum = new Item("Empty Album", "A case for an album. There's nothing in it.", 1, true);
+            Item drakePoster = new Item("Drake Poster", "A huge poster of Drake's face, with some blurb about a concert in Sevastopol at the bottom.", 1, true);
+            Item sleepingBag = new Item("Sleeping Bag", "A used LL Bean sleeping bag. It's pretty gross looking.", 1, true);
+            Item merchandise = new Item("Drake Merchandise", "A cardboard box full of Drake merchandise.", 1, true);
+
             Slowmode = slowMode;
             printSlowly("You walk into the back of the nearby concert venue. ");
             printSlowly("Normally, this area is reserved for staff only, but someone stole the doorknobs to all the doors here, \n as well as the paint that made up the letters \"STAFF ONLY\" on some of them, so you couldn't really tell.");
