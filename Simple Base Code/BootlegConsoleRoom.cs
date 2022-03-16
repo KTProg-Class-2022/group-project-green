@@ -5,7 +5,7 @@ using System.Text;
 namespace Simple_Base_Code
 {
 
-    class DrakeRoom
+    class BootlegConsoleRoom
     {
         int roomNum;
         bool Slowmode;
@@ -44,30 +44,20 @@ namespace Simple_Base_Code
             }
         }
 
-
-
-        public DrakeRoom(bool slowMode, bool[] roomsCompleted)
+        public BootlegConsoleRoom(bool slowMode, bool[] roomsCompleted)
         {
-            /* Items */
-            Item cipherBook = new Item("Caesar's Cipher Book", "A huge book about ancient Roman encryption. Looks large enough to have a secret compartment, but is stuck closed.", 1, false);
-            Item cryptographyBook = new Item("Cryptography Book", "A book about Cryptography. Smells like old book.", 1, false);
-            Item ntfsBook = new Item("NTFS Book", "A book about NTFS. I don't know what NTFS stands for.", 1, false);
-            Item zodiacPoster = new Item("Zodiac Killer Poster", "A poster for some documentary about the Zodiac Killer. It's a big scan of one of his cipher letters.", 1, false);
-            Item pentLetter = new Item("Pentagon Letter", "A letter that says it's from the US Department of Defence. Looks like a page of pure gibberish.", 1, false);
-            Item emptyAlbum = new Item("Empty Album", "A case for an album. There's nothing in it.", 1, true);
-            Item drakePoster = new Item("Drake Poster", "A huge poster of Drake's face, with some blurb about a concert in Sevastopol at the bottom.", 1, true);
-            Item sleepingBag = new Item("Sleeping Bag", "A used LL Bean sleeping bag. It's pretty gross looking.", 1, true);
-            Item merchandise = new Item("Drake Merchandise", "A cardboard box full of Drake merchandise.", 1, true);
-
             Slowmode = slowMode;
-            printSlowly("You walk into the back of the nearby concert venue. ");
-            printSlowly("Normally, this area is reserved for staff only, but someone stole the doorknobs to all the doors here, \n as well as the paint that made up the letters \"STAFF ONLY\" on some of them, so you couldn't really tell.");
-            printSlowly("As you walk down the hallway of dressing rooms and storage closets, you are suddenly jumpscared by a mysterious and surprising figure.");
-            printSlowly("Drake: Hello Vaansh Mansharamani I need you to unlock this safe in my special room in this concert place for it holds the secret i need to defeat my arch nemesis Evil Drake");
-            printSlowly("The real and actual Drake is here, in this very building, and he quickly shoves you into a room, whose door has a paper star glued onto it, with \"DRAKE!\" sharpied on.");
-            printSlowly("A number of questions rise up regarding this entire situation, but you decide not to ask any of them, for fear of more questions.");
-            printSlowly("You look around the room, noticing a huge 19th century old-west-style bank safe in the exact middle of an otherwise normal(ish) dressing room.");
-            Mastermind mastermindgame = new Mastermind("encrypted");
+            printSlowly("You walk into the dining hall.");
+            printSlowly("The dining hall is a big, bland room with a very long table lined with chairs.");
+            printSlowly("In the middle of the room, though, is a gaming setup.");
+            printSlowly("A big tube TV, a Dendy type console, some decorations and a filing cabinet with all several hundred Mario games, about ten being real.");
+            printSlowly("The console is bolted down with an alphabetical locking device of sorts, the kind you might find in a puzzle game about words.");
+            printSlowly("You get an idea to challenge your arch nemesis, Tim Bluehelmet, to a gaming tournament.");
+            printSlowly("To be safe though, you'd need to cram in some practice.");
+            printSlowly("The dining hall isn't open 24/7, so you'd need to get a Dendy for your own room.");
+            printSlowly("Unfortunately, a Dendy can cost hundreds of cents.");
+            printSlowly("If only you could, say, guess the word to unlock the Dendy and steal it for a night.");
+            Mastermind mastermindgame = new Mastermind("ninninedo");
             bool finishedThis = false;
             while (!finishedThis)
             {
@@ -94,17 +84,16 @@ namespace Simple_Base_Code
                         break;
                 }
             }
-            printSlowly("Having unlocked the safe, you open it to find a small wooden box labeled \"Comedically Timed Lit Stick of Dynamite\", and a Drake album.");
-            printSlowly("Drake appears behind you, grabs the box, shouts \"Eureka!\", and runs away while giggling in a childlike manner, leaving you with the album.");
-            printSlowly("Going back from the concert venue, you happen to encounter Tim Bluehelmet, and gift him the Drake album you found.");
-            printSlowly("The next day, you challenge him to a rap battle inside the venue, with his family and most of the city in attendance. ");
-            printSlowly("With his most recent exposure to rap music being the Drake album, his bars are cursed to be silly and wacky. ");
-            printSlowly("Cringe, even. He loses devastatingly, and his very own family thinks him to be cringe now. Great success!");
-            
-            
-            
-            
-            roomsCompleted[0] = true;
+            printSlowly("Having successfully unlocked the console, you inconspicuously shove it into your back pocket and bring it up to your apartment.");
+            printSlowly("You also drag the filing cabinet full of games with you, but conspicuously. For the rest of the day and into the following morning you game nonstop.");
+            printSlowly("The next day, keeping yourself awake with suspicious energy drinks, you challenge Tim Bluehelmet to game at the dining hall, with his family and most of the city in attendance.");
+            printSlowly("After he accepts and you start the game, you perfectly execute a cheat code and annihilate him completely. ");
+            printSlowly("It is so very embarrassing, and the whole city, including his very own family, see how bad he is at Mario Super 13 and chase him out of the dining hall for how cringe it was. Great Success!");
+
+
+
+
+            roomsCompleted[2] = true;
             printSlowly("You head back to where you originally saw tim bluehelmet, you look around and see three doors.");
             printSlowly("One door has a radio next to it.");
             printSlowly("The second door has a sign in front that says Buy Crypto Here.");
@@ -180,7 +169,6 @@ namespace Simple_Base_Code
 
 
         }
-
 
 
     }

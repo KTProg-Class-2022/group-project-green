@@ -4,8 +4,7 @@ using System.Text;
 
 namespace Simple_Base_Code
 {
-
-    class DrakeRoom
+    class BitcoinRoom
     {
         int roomNum;
         bool Slowmode;
@@ -44,30 +43,20 @@ namespace Simple_Base_Code
             }
         }
 
-
-
-        public DrakeRoom(bool slowMode, bool[] roomsCompleted)
+        public BitcoinRoom(bool slowMode, bool[] roomsCompleted)
         {
-            /* Items */
-            Item cipherBook = new Item("Caesar's Cipher Book", "A huge book about ancient Roman encryption. Looks large enough to have a secret compartment, but is stuck closed.", 1, false);
-            Item cryptographyBook = new Item("Cryptography Book", "A book about Cryptography. Smells like old book.", 1, false);
-            Item ntfsBook = new Item("NTFS Book", "A book about NTFS. I don't know what NTFS stands for.", 1, false);
-            Item zodiacPoster = new Item("Zodiac Killer Poster", "A poster for some documentary about the Zodiac Killer. It's a big scan of one of his cipher letters.", 1, false);
-            Item pentLetter = new Item("Pentagon Letter", "A letter that says it's from the US Department of Defence. Looks like a page of pure gibberish.", 1, false);
-            Item emptyAlbum = new Item("Empty Album", "A case for an album. There's nothing in it.", 1, true);
-            Item drakePoster = new Item("Drake Poster", "A huge poster of Drake's face, with some blurb about a concert in Sevastopol at the bottom.", 1, true);
-            Item sleepingBag = new Item("Sleeping Bag", "A used LL Bean sleeping bag. It's pretty gross looking.", 1, true);
-            Item merchandise = new Item("Drake Merchandise", "A cardboard box full of Drake merchandise.", 1, true);
-
             Slowmode = slowMode;
-            printSlowly("You walk into the back of the nearby concert venue. ");
-            printSlowly("Normally, this area is reserved for staff only, but someone stole the doorknobs to all the doors here, \n as well as the paint that made up the letters \"STAFF ONLY\" on some of them, so you couldn't really tell.");
-            printSlowly("As you walk down the hallway of dressing rooms and storage closets, you are suddenly jumpscared by a mysterious and surprising figure.");
-            printSlowly("Drake: Hello Vaansh Mansharamani I need you to unlock this safe in my special room in this concert place for it holds the secret i need to defeat my arch nemesis Evil Drake");
-            printSlowly("The real and actual Drake is here, in this very building, and he quickly shoves you into a room, whose door has a paper star glued onto it, with \"DRAKE!\" sharpied on.");
-            printSlowly("A number of questions rise up regarding this entire situation, but you decide not to ask any of them, for fear of more questions.");
-            printSlowly("You look around the room, noticing a huge 19th century old-west-style bank safe in the exact middle of an otherwise normal(ish) dressing room.");
-            Mastermind mastermindgame = new Mastermind("encrypted");
+            
+            printSlowly("When you enter the room, you see a ton of different items. ");
+            printSlowly("You notice a desk at the end of the room with a brass cash register.");
+            printSlowly("You think to yourself that this is, or was, a store. ");
+            printSlowly("You look around and find a golden woopie coushion");
+            printSlowly("You think to yourself this would be a perfect item to get revenge");
+            printSlowly("Your then look at the price tag and find out it costs ten dollars and you only have one cent");
+            printSlowly("You then find a small computer");
+            printSlowly("You log on to the computer and find time BlueHemet previously logged on to twitter, however all you need is the password");
+            printSlowly("You as a previous programming student from keefe tech know how to hack into the twitter account so you start the attempt");
+            Mastermind mastermindgame = new Mastermind("ethereum");
             bool finishedThis = false;
             while (!finishedThis)
             {
@@ -94,17 +83,17 @@ namespace Simple_Base_Code
                         break;
                 }
             }
-            printSlowly("Having unlocked the safe, you open it to find a small wooden box labeled \"Comedically Timed Lit Stick of Dynamite\", and a Drake album.");
-            printSlowly("Drake appears behind you, grabs the box, shouts \"Eureka!\", and runs away while giggling in a childlike manner, leaving you with the album.");
-            printSlowly("Going back from the concert venue, you happen to encounter Tim Bluehelmet, and gift him the Drake album you found.");
-            printSlowly("The next day, you challenge him to a rap battle inside the venue, with his family and most of the city in attendance. ");
-            printSlowly("With his most recent exposure to rap music being the Drake album, his bars are cursed to be silly and wacky. ");
-            printSlowly("Cringe, even. He loses devastatingly, and his very own family thinks him to be cringe now. Great success!");
-            
-            
-            
-            
-            roomsCompleted[0] = true;
+            printSlowly("You log in ");
+            printSlowly("You then build your own cryptocurrency and call it slobbycoin");
+            printSlowly("you advertise slobby coin on Tims Twitter Account");
+            printSlowly("The price skyrockets and you become a billionare, you sell all your coin, and the next day the economy crashes");
+            printSlowly("This makes tim bluehelmet look cringe since it looks like he scamed millions of people including un members");
+            printSlowly("You now have enough to buy the woopie cushion as the economy crashing makes the cushion cost 1 cent, and you are a billionare, Great success!");
+
+
+
+
+            roomsCompleted[1] = true;
             printSlowly("You head back to where you originally saw tim bluehelmet, you look around and see three doors.");
             printSlowly("One door has a radio next to it.");
             printSlowly("The second door has a sign in front that says Buy Crypto Here.");
@@ -180,8 +169,5 @@ namespace Simple_Base_Code
 
 
         }
-
-
-
     }
 }
