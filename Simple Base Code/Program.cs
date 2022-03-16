@@ -6,10 +6,35 @@ namespace Simple_Base_Code
 	{
 
 		static void Main(string[] args)
+        {
+			/* Tutorial Room/Janitor Room */
+		//make item
+		static void makeItem(){
 		{
 			
 
 			/* Room One */
+			Item nokia = new Item("Nokia Phone", "A Nokia Phone that is not even in production anymore.", 0, false);
+			Item ransom = new Item("Ransomware Computer", "A computer that is infected with ransomware.", 0, false);
+			Item printer = new Item("Printer", "A printer that broke a while ago.", 0, false);
+			Item phoneBook = new Item("Phone Book", "A book that contains all of its owner's most recent calls. Most are to tech support.", 0, false);
+			Item teaCup = new Item("Tea Cup", "A mysterious cup of tea. It could give good fortune to those who drink it.", 0, true);
+			Item hair = new Item("Hair", "A strand of hair.", 0, true);
+			Item spider = new Item("Spider", "A spider that has hid in the janitors cart. He stares at you with his big eyes", 0, true);
+			Item eviction = new Item("Eviction Notice", "An eviction notice. Whoever it's for, they've been ignoring it.", 0, true);
+			Item flashlight = new Item("Flashlight", "A flashlight. You remember using it recently. You don't know how it got here.", 0,true);
+
+			/* RoomOne */
+			Item cipherBook = new Item("Caesar's Cipher Book", "A huge book about ancient Roman encryption. Looks large enough to have a secret compartment, but is stuck closed.", 1, false);
+			Item cryptographyBook = new Item("Cryptography Book", "A book about Cryptography. Smells like old book.", 1, false);
+			Item ntfsBook = new Item("NTFS Book", "A book about NTFS. I don't know what NTFS stands for.", 1, false);
+			Item zodiacPoster = new Item("Zodiac Killer Poster", "A poster for some documentary about the Zodiac Killer. It's a big scan of one of his cipher letters.", 1, false);
+			Item pentLetter = new Item("Pentagon Letter", "A letter that says it's from the US Department of Defence. Looks like a page of pure gibberish.", 1, false);
+			Item emptyAlbum = new Item("Empty Album", "A case for an album. There's nothing in it.", 1, true);
+			Item drakePoster = new Item("Drake Poster", "A huge poster of Drake's face, with some blurb about a concert in Sevastopol at the bottom.", 1, true);
+			Item sleepingBag = new Item("Sleeping Bag", "A used LL Bean sleeping bag. It's pretty gross looking.", 1, true);
+			Item merchandise = new Item("Drake Merchandise", "A cardboard box full of Drake merchandise.", 1, true);
+
 			Item cipherBook = new Item("Caesar's Cipher Book", "A huge book about ancient Roman encryption. Looks large enough to have a secret compartment, but is stuck closed.", 1, false);
 			Item cryptographyBook = new Item("Cryptography Book", "A book about Cryptography. Smells like old book.", 1, false);
 			Item ntfsBook = new Item("NTFS Book", "A book about NTFS. I don't know what NTFS stands for.", 1, false);
@@ -52,8 +77,18 @@ namespace Simple_Base_Code
 			inventory.addObject(nzap);
 			inventory.addObject(mayo);
 
-            Console.WriteLine("Hello, Class!");
-            Mastermind mastermindgame = new Mastermind("ihateella");
+
+
+
+		}
+
+
+		static void Main(string[] args)
+        {
+			makeItem();
+			Console.WriteLine("Enter a password(for mastermind test) :");
+			string password = Console.ReadLine();
+            Mastermind mastermindgame = new Mastermind(password);
             while(mastermindgame.completed == false)
             {
  
