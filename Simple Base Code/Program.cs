@@ -51,7 +51,7 @@ namespace Simple_Base_Code
 			Item psFive = new Item("Playstation 5 Controller", "A controller for the Playstation Five. You wonder how it got there.", 3, true);
 			Item peanuts = new Item("Circus Peanuts", "A bag of circus peanuts.", 3, true);
 			Item clown = new Item("Clown Costume", "A full clown cotsume, nose and all. It looks like it fits you perfectly.", 3, true);
-			Item mayo = new Item("Mayo?", "A can of what you think is mayonase. You dont want to taste it", 3, true);
+			Item mayo = new Item("Mayo?", "A can of what you think is mayonnaise. You dont want to taste it", 3, true);
 			Item paking = new Item("Box", "A box with a label that says Bosnian Roulette.", 3, true);
 
 			Inventory inventory = new Inventory();
