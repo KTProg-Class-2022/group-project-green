@@ -72,6 +72,7 @@ namespace Simple_Base_Code
             }
             else
             {
+                Console.WriteLine("Input not of correct length or not a command");
                 return false;
             }
         }

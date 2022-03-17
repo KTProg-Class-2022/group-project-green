@@ -8,10 +8,9 @@ namespace Simple_Base_Code
 {
 
 
-
-
     class Tutorial
     {
+        int roomNum;
         bool Slowmode;
         Item nokia = new Item("Nokia Phone", "A Nokia Phone that is not even in production anymore.", 0, false);
         Item ransom = new Item("Ransomware Computer", "A computer that is infected with ransomware.", 0, false);
@@ -22,7 +21,7 @@ namespace Simple_Base_Code
         Item spider = new Item("Spider", "A spider that has hid in the janitors cart. He stares at you with his big eyes", 0, true);
         Item eviction = new Item("Eviction Notice", "An eviction notice. You have been ignoring it since it was mailed to you.", 0, true);
         Item flashlight = new Item("Flashlight", "A flashlight. You remember using it recently.", 0, true);
-        
+
 
         public void printSlowly(string String)
         {
@@ -59,7 +58,7 @@ namespace Simple_Base_Code
         {
             Slowmode = slowmode;
 
-            int roomNum;
+            //int roomNum;
             Console.WriteLine();
             /* Nick first half */
             printSlowly("Your alarm has woken you up.");
@@ -91,7 +90,7 @@ namespace Simple_Base_Code
                 Console.WriteLine("Enter a command or Guess a word help to see commands");
                 string input = Console.ReadLine();
 
-                switch(input)
+                switch (input)
                 {
                     case "help":
                         Console.WriteLine("mastermind-length : sees how many characters the mastermind game is");
@@ -110,24 +109,6 @@ namespace Simple_Base_Code
                         }
                         break;
                 }
-
-
-
-
-                /*if(input == "help")
-                {
-                    Console.WriteLine("mastermind-length : sees how many characters the mastermind game is");
-                    Console.WriteLine("check-items : get list of items");
-                    //will implement commands tommrow
-                }
-                else if(input == "mastermind-length")
-                {
-                    Console.WriteLine("{0}", mastermindgame.getLength());
-                }
-                else if (mastermindgame.guess(input) == true)
-                {
-                    finishedThis = true;
-                }*/
             }
 
 
@@ -147,26 +128,37 @@ namespace Simple_Base_Code
             printSlowly("The last door has an advertisement for a new gaming console.");
             printSlowly("What door will you pick?");
 
-
-            if (Int32.TryParse(Console.ReadLine(), out roomNum))
+            bool bad = true;
+            while (bad)
             {
-                if (roomNum == 1)
+                if (Int32.TryParse(Console.ReadLine(), out roomNum))
                 {
-                    printSlowly("You enter the first room.");
-                }
-                else if (roomNum == 2)
-                {
-                    printSlowly("You enter the second room.");
-                }
-                else if (roomNum == 3)
-                {
-                    printSlowly("You enter the third room.");
-                }
-                else
-                {
-                    printSlowly("Invalid number. Try again.");
+                    if (roomNum == 1)
+                    {
+                        printSlowly("You enter the first room.");
+                        bad = false;
+                    }
+                    else if (roomNum == 2)
+                    {
+                        printSlowly("You enter the second room.");
+                        bad = false;
+                    }
+                    else if (roomNum == 3)
+                    {
+                        printSlowly("You enter the third room.");
+                        bad = false;
+                    }
+                    else
+                    {
+                        printSlowly("Invalid number. Try again.");
+                        bad = true;
+                    }
                 }
             }
+        }
+        public int getNextRoom()
+        {
+            return roomNum;
         }
 
     }

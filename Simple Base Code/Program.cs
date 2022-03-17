@@ -2,11 +2,12 @@
 
 namespace Simple_Base_Code
 {
-    class Program
-    {
+	class Program
+	{
 
 		//make item
-		static void makeItem(){
+		static void makeItem()
+		{
 			/* Room One */
 			Item nokia = new Item("Nokia Phone", "A Nokia Phone that is not even in production anymore.", 0, false);
 			Item ransom = new Item("Ransomware Computer", "A computer that is infected with ransomware.", 0, false);
@@ -16,7 +17,7 @@ namespace Simple_Base_Code
 			Item hair = new Item("Hair", "A strand of hair.", 0, true);
 			Item spider = new Item("Spider", "A spider that has hid in the janitors cart. He stares at you with his big eyes", 0, true);
 			Item eviction = new Item("Eviction Notice", "An eviction notice. Whoever it's for, they've been ignoring it.", 0, true);
-			Item flashlight = new Item("Flashlight", "A flashlight. You remember using it recently. You don't know how it got here.", 0,true);
+			Item flashlight = new Item("Flashlight", "A flashlight. You remember using it recently. You don't know how it got here.", 0, true);
 
 			/* RoomOne */
 			Item cipherBook = new Item("Caesar's Cipher Book", "A huge book about ancient Roman encryption. Looks large enough to have a secret compartment, but is stuck closed.", 1, false);
@@ -66,9 +67,9 @@ namespace Simple_Base_Code
 			peanuts.PrintItem();
 			cryptographyBook.PrintItem();
 		}
-			
+
 		static void Main(string[] args)
-        {
+		{
 			/*Commands commands = new Commands();
 			makeItem();
 			
@@ -83,10 +84,10 @@ namespace Simple_Base_Code
 			{
 				commands.BosnianRoulette(mastermindgame);
 			}*/
-			
+
 			Game game = new Game();
 			game.StartGame();
-        }
-			
-    }
+		}
+
+	}
 }
