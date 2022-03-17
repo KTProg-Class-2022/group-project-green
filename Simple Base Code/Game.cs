@@ -31,7 +31,7 @@ namespace Simple_Base_Code
                         nextRoom = drakeRoom.getNextRoom();
                         break;
                     case 2:
-                        
+
                         BitcoinRoom bitcoin = new BitcoinRoom(slowMode, roomsCompleted);
                         roomsCompleted[1] = true;
                         nextRoom = bitcoin.getNextRoom();
@@ -50,5 +50,5 @@ namespace Simple_Base_Code
             }
         }
     }
-    
+
 }

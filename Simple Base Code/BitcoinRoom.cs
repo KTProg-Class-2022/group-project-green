@@ -46,7 +46,7 @@ namespace Simple_Base_Code
         public BitcoinRoom(bool slowMode, bool[] roomsCompleted)
         {
             Slowmode = slowMode;
-            
+
             printSlowly("When you enter the room, you see a ton of different items. ");
             printSlowly("You notice a desk at the end of the room with a brass cash register.");
             printSlowly("You think to yourself that this is, or was, a store. ");
