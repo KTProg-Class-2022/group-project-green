@@ -94,69 +94,75 @@ namespace Simple_Base_Code
 
 
             roomsCompleted[0] = true;
-            printSlowly("You head back to where you originally saw tim bluehelmet, you look around and see three doors.");
-            printSlowly("One door has a radio next to it.");
-            printSlowly("The second door has a sign in front that says Buy Crypto Here.");
-            printSlowly("The last door has an advertisement for a new gaming console.");
-            printSlowly("What door will you pick?");
-
-
-
-            bool bad = true;
-            while (bad)
+            if (!((roomsCompleted[1] == true && roomsCompleted[0] == true) && roomsCompleted[2] == true))
             {
-                if (Int32.TryParse(Console.ReadLine(), out roomNum))
+                printSlowly("You head back to where you originally saw tim bluehelmet, you look around and see three doors.");
+                printSlowly("One door has a radio next to it.");
+                printSlowly("The second door has a sign in front that says Buy Crypto Here.");
+                printSlowly("The last door has an advertisement for a new gaming console.");
+                printSlowly("What door will you pick?");
+
+
+
+                bool bad = true;
+                while (bad)
                 {
-                    if (roomNum == 1)
+                    if (Int32.TryParse(Console.ReadLine(), out roomNum))
                     {
-                        if (roomsCompleted[0] == true)
+                        if (roomNum == 1)
                         {
-                            printSlowly("you were blocked by a security guard, while drake seems to know you they do not choose a different door");
-                            bad = true;
+                            if (roomsCompleted[0] == true)
+                            {
+                                printSlowly("you were blocked by a security guard, while drake seems to know you they do not choose a different door");
+                                bad = true;
+                            }
+                            else
+                            {
+                                roomNum = 1;
+                                printSlowly("You enter the first room.");
+                                bad = false;
+                            }
+                        }
+                        else if (roomNum == 2)
+                        {
+                            if (roomsCompleted[1] == true)
+                            {
+                                printSlowly("The door is blocked by a firewall, choose a different room");
+                                bad = true;
+                            }
+                            else
+                            {
+                                printSlowly("You enter the second room.");
+                                roomNum = 2;
+                                bad = false;
+                            }
+                        }
+                        else if (roomNum == 3)
+                        {
+                            if (roomsCompleted[2] == true)
+                            {
+                                printSlowly("Due to the use of a bootleg console the police have arrived and are blocking your path, choose a different room");
+                                bad = true;
+                            }
+                            else
+                            {
+                                printSlowly("You enter the second room.");
+                                roomNum = 3;
+                                bad = false;
+                            }
                         }
                         else
                         {
-                            roomNum = 1;
-                            printSlowly("You enter the first room.");
-                            bad = false;
-                        }
-                    }
-                    else if (roomNum == 2)
-                    {
-                        if (roomsCompleted[1] == true)
-                        {
-                            printSlowly("The door is blocked by a firewall, choose a different room");
+                            printSlowly("Invalid number. Try again.");
                             bad = true;
                         }
-                        else
-                        {
-                            printSlowly("You enter the second room.");
-                            roomNum = 2;
-                            bad = false;
-                        }
-                    }
-                    else if (roomNum == 3)
-                    {
-                        if (roomsCompleted[2] == true)
-                        {
-                            printSlowly("Due to the use of a bootleg console the police have arrived and are blocking your path, choose a different room");
-                            bad = true;
-                        }
-                        else
-                        {
-                            printSlowly("You enter the second room.");
-                            roomNum = 3;
-                            bad = false;
-                        }
-                    }
-                    else
-                    {
-                        printSlowly("Invalid number. Try again.");
-                        bad = true;
                     }
                 }
             }
-
+            else
+            {
+                roomNum = 0;
+            }
 
 
 
