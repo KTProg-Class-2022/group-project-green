@@ -9,7 +9,7 @@ namespace Simple_Base_Code
 
         //enable slow mode
         //if false will make text go fast
-        bool slowMode = true;
+        bool slowMode = false;
 
 
         public Game()
@@ -18,6 +18,7 @@ namespace Simple_Base_Code
         }
         public void StartGame()
         {
+
             Tutorial tutorial = new Tutorial(slowMode);
             int nextRoom = tutorial.getNextRoom();
             bool[] roomsCompleted = { false, false, false };
@@ -48,6 +49,8 @@ namespace Simple_Base_Code
 
                 }
             }
+            FinalRoom finalRoom = new FinalRoom(slowMode);
+
         }
     }
 
