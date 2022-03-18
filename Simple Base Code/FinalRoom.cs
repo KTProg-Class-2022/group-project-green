@@ -58,7 +58,7 @@ namespace Simple_Base_Code
             printSlowly("Unfortunately, there are no clues to be found in this room, being completely empty aside from the air conditioner. You will have to totally guess this word.");
 
 
-            Console.WriteLine(lines[index]);
+            //Console.WriteLine(lines[index]);
             Mastermind mastermindgame = new Mastermind(lines[index]);
             bool finishedThis = false;
             while (!finishedThis)
