@@ -44,6 +44,34 @@ namespace Simple_Base_Code
             }
         }
 
+        string[] items =
+        {
+            "Copy of inking 2 the game",
+            "Red hat with L on it",
+            "Picture of What if Zelda was a girl but its link as a girl",
+            "A news article about weeknight come to a handheld console ",
+            "N-Zapp",
+            "A ten on the wall crossed out to nine",
+            "Copy of Ballz",
+            "Copy of mincraft",
+            "Weird \"off brand\" Japanese manga",
+            "Ps5 controller",
+            "A bag of circus peanuts",
+            "A clown costume",
+            "What you think is mayonnaise",
+            "A box with both packing peanuts and circus peanuts and the name is bosnian roulette"
+        };
+
+
+        public void seeItems()
+        {
+            for (int i = 0; i < items.Length; i++)
+            {
+                printSlowly(items[i]);
+            }
+
+        }
+
         public BootlegConsoleRoom(bool slowMode, bool[] roomsCompleted)
         {
             Slowmode = slowMode;
@@ -74,6 +102,7 @@ namespace Simple_Base_Code
                         Console.WriteLine("{0}", mastermindgame.getLength());
                         break;
                     case "check-items":
+                        seeItems();
                         break;
 
                     default:

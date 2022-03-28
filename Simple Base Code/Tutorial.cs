@@ -53,7 +53,27 @@ namespace Simple_Base_Code
                 Console.WriteLine(String);
             }
         }
+        string[] items =
+        {
+            "Nokia Phone",
+            "A massive spider on his janitors cart",
+            "Computer infected with ransomware",
+            "a broken phone",
+            "strand of hair",
+            "A book that stores all his previous calls and most of them are to tech support",
+            "eviction notice",
+            "A flashlight"
+        };
 
+
+        public void seeItems()
+        {
+            for (int i = 0; i < items.Length; i++)
+            {
+                printSlowly(items[i]);
+            }
+
+        }
         public Tutorial(bool slowmode)
         {
             Slowmode = slowmode;
@@ -100,6 +120,7 @@ namespace Simple_Base_Code
                         Console.WriteLine("{0}", mastermindgame.getLength());
                         break;
                     case "check-items":
+                        seeItems();
                         break;
 
                     default:

@@ -44,6 +44,28 @@ namespace Simple_Base_Code
             }
         }
 
+        string[] items =
+        {
+            "A caesars cipher book",
+            "A sleeping bag",
+            "A poster of Drake",
+            "A book on NTFS",
+            "Zodiac killer messages/ciphers",
+            "A letter from the pentagon",
+            "A empty album",
+            "A book on Cryptography",
+            "Drake Merchandise"
+        };
+
+
+        public void seeItems()
+        {
+            for(int i = 0; i < items.Length; i++)
+            {
+                printSlowly(items[i]);
+            }
+
+        }
 
 
         public DrakeRoom(bool slowMode, bool[] roomsCompleted)
@@ -73,6 +95,7 @@ namespace Simple_Base_Code
                         Console.WriteLine("{0}", mastermindgame.getLength());
                         break;
                     case "check-items":
+                        seeItems();
                         break;
 
                     default:

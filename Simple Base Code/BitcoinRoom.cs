@@ -42,7 +42,24 @@ namespace Simple_Base_Code
                 Console.WriteLine(String);
             }
         }
+        string[] items =
+       {
+            "A bitcoin pillow",
+            "To the moon poster",
+            "Doge plushies",
+            "A diamond shaped mirror",
+            "A number 2 varsity jacket"
+        };
 
+
+        public void seeItems()
+        {
+            for (int i = 0; i < items.Length; i++)
+            {
+                printSlowly(items[i]);
+            }
+
+        }
         public BitcoinRoom(bool slowMode, bool[] roomsCompleted)
         {
             Slowmode = slowMode;
@@ -73,6 +90,7 @@ namespace Simple_Base_Code
                         Console.WriteLine("{0}", mastermindgame.getLength());
                         break;
                     case "check-items":
+                        seeItems();
                         break;
 
                     default:

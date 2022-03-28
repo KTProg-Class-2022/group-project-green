@@ -76,6 +76,7 @@ namespace Simple_Base_Code
                         Console.WriteLine("{0}", mastermindgame.getLength());
                         break;
                     case "check-items":
+                        Console.WriteLine("there are no items");
                         break;
 
                     default:
