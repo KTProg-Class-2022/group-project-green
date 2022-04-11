@@ -39,7 +39,7 @@ namespace Simple_Base_Code
                 Console.ReadKey();
             }
             else
-            {
+            { 
                 Console.WriteLine(String);
             }
         }
@@ -50,7 +50,7 @@ namespace Simple_Base_Code
             printSlowly("You walk into the dining hall.");
             printSlowly("The dining hall is a big, bland room with a very long table lined with chairs.");
             printSlowly("In the middle of the room, though, is a gaming setup.");
-            printSlowly("A big tube TV, a Dendy type console, some decorations and a filing cabinet with all several hundred Mario games, about ten being real.");
+            printSlowly("A big tube TV, a Dendy type console, some decorations and a filing cabinet with all several\n hundred Mario games, about ten being real.");
             printSlowly("The console is bolted down with an alphabetical locking device of sorts, the kind you might find in a puzzle game about words.");
             printSlowly("You get an idea to challenge your arch nemesis, Tim Bluehelmet, to a gaming tournament.");
             printSlowly("To be safe though, you'd need to cram in some practice.");
@@ -86,15 +86,15 @@ namespace Simple_Base_Code
             }
             printSlowly("Having successfully unlocked the console, you inconspicuously shove it into your back pocket and bring it up to your apartment.");
             printSlowly("You also drag the filing cabinet full of games with you, but conspicuously. For the rest of the day and into the following morning you game nonstop.");
-            printSlowly("The next day, keeping yourself awake with suspicious energy drinks, you challenge Tim Bluehelmet to game at the dining hall, with his family and most of the city in attendance.");
+            printSlowly("The next day, keeping yourself awake with suspicious energy drinks, you challenge Tim Bluehelmet\n to game at the dining hall, with his family and most of the city in attendance.");
             printSlowly("After he accepts and you start the game, you perfectly execute a cheat code and annihilate him completely. ");
-            printSlowly("It is so very embarrassing, and the whole city, including his very own family, see how bad he is at Mario Super 13 and chase him out of the dining hall for how cringe it was. Great Success!");
+            printSlowly("It is so very embarrassing, and the whole city, including his very own family, see how bad he is at\n Mario Super 13 and chase him out of the dining hall for how cringe it was. Great Success!");
 
 
 
 
             roomsCompleted[2] = true;
-            printSlowly("You head back to where you originally saw tim bluehelmet, you look around and see three doors.");
+            printSlowly("You head back to where you originally saw Tim Bluehelmet, you look around and see three doors.");
             printSlowly("One door has a radio next to it.");
             printSlowly("The second door has a sign in front that says Buy Crypto Here.");
             printSlowly("The last door has an advertisement for a new gaming console.");
@@ -144,7 +144,7 @@ namespace Simple_Base_Code
                         }
                         else
                         {
-                            printSlowly("You enter the second room.");
+                            printSlowly("You enter the third room.");
                             roomNum = 3;
                             bad = false;
                         }

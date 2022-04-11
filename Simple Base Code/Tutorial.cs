@@ -62,7 +62,7 @@ namespace Simple_Base_Code
             Console.WriteLine();
             /* Nick first half */
             printSlowly("Your alarm has woken you up.");
-            printSlowly("You, Vaansh Mansharamani, visiting the fair country of Bosnia, have recently ordered a Nuclear Missile off the black market.");
+            printSlowly("You, Vaansh Mansharamani, visiting the fair country of Bosnia, have recently ordered a Nuclear Missile \noff the black market.");
             printSlowly("(not for anything nefarious, just to fly you to mars)");
             printSlowly("Today, you are to meet your dealer, Nick, outside the apartment complex at which you are staying.");
             printSlowly("Unfortunately, the elevator has gone out (approx. 30 years ago) and your budget-friendly luxury penthouse is on the 50th floor.");
@@ -75,7 +75,7 @@ namespace Simple_Base_Code
             printSlowly("such as pens and marbles, all over the stairs, making them dangerous to walk down.");
             printSlowly("You remember there's some sort of OSHA guideline about tripping hazards,");
             printSlowly("So you decide that the only way to safely make it down the stairs is to be OSHA certified.\n");
-            printSlowly("As you look around for a spare OSHA certification card, you happen to spot the janitor in the Janitor Closet™.");
+            printSlowly("As you look around for a spare OSHA certification card, you happen to spot the janitor in the Janitor Closet(Tm).");
             printSlowly("The janitor locks up his one prized possession, an OSHA certification card, in a little chest and leaves.");
             printSlowly("He neglects to lock the door and appears to be too drunk or hungover to even notice you.");
             printSlowly("After he's out of sight, you start snooping around in the room.");
@@ -114,10 +114,9 @@ namespace Simple_Base_Code
 
 
             /*Ella second half*/
-
+            printSlowly("You complte the puzzle, but you see a shocking sight.");
             printSlowly("You stare at Nick as he is taken away in handcufs.");
             printSlowly("The blue helmeted heads of those men haunt you as you walk behind them.");
-            /* Code prompts user to enter the room*/
             printSlowly("You swear that you will get revenge on the UN for crushing your dreams and going to Mars.");
             printSlowly("While entering the room, you bump into a UN member. He apologizes quickly");
             printSlowly("At this moment, you, Vaansh Mansharamani, decide that he is the one you will target.");

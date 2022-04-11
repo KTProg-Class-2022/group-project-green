@@ -62,11 +62,11 @@ namespace Simple_Base_Code
             Slowmode = slowMode;
             printSlowly("You walk into the back of the nearby concert venue. ");
             printSlowly("Normally, this area is reserved for staff only, but someone stole the doorknobs to all the doors here, \n as well as the paint that made up the letters \"STAFF ONLY\" on some of them, so you couldn't really tell.");
-            printSlowly("As you walk down the hallway of dressing rooms and storage closets, you are suddenly jumpscared by a mysterious and surprising figure.");
-            printSlowly("Drake: Hello Vaansh Mansharamani I need you to unlock this safe in my special room in this concert place for it holds the secret i need to defeat my arch nemesis Evil Drake");
-            printSlowly("The real and actual Drake is here, in this very building, and he quickly shoves you into a room, whose door has a paper star glued onto it, with \"DRAKE!\" sharpied on.");
-            printSlowly("A number of questions rise up regarding this entire situation, but you decide not to ask any of them, for fear of more questions.");
-            printSlowly("You look around the room, noticing a huge 19th century old-west-style bank safe in the exact middle of an otherwise normal(ish) dressing room.");
+            printSlowly("As you walk down the hallway of dressing rooms and storage closets, you are suddenly jumpscared by a \nmysterious and surprising figure.");
+            printSlowly("Drake: Hello Vaansh Mansharamani I need you to unlock this safe in my special room in this concert \nplace for it holds the secret I need to defeat my arch nemesis Evil Drake");
+            printSlowly("The real and actual Drake is here, in this very building, and he quickly shoves you into a room, whose \ndoor has a paper star glued onto it, with \"DRAKE!\" sharpied on.");
+            printSlowly("A number of questions rise up regarding this entire situation, but you decide not to ask any of them, \nfor fear of more questions.");
+            printSlowly("You look around the room, noticing a huge 19th century old-west-style bank safe in the exact middle \nof an otherwise normal(ish) dressing room.");
             Mastermind mastermindgame = new Mastermind("encrypted");
             bool finishedThis = false;
             while (!finishedThis)
@@ -94,7 +94,7 @@ namespace Simple_Base_Code
                         break;
                 }
             }
-            printSlowly("Having unlocked the safe, you open it to find a small wooden box labeled \"Comedically Timed Lit Stick of Dynamite\", and a Drake album.");
+            printSlowly("Having unlocked the safe, you open it to find a small wooden box labeled \n\"Comedically Timed Lit Stick of Dynamite\", and a Drake album.");
             printSlowly("Drake appears behind you, grabs the box, shouts \"Eureka!\", and runs away while giggling in a childlike manner, leaving you with the album.");
             printSlowly("Going back from the concert venue, you happen to encounter Tim Bluehelmet, and gift him the Drake album you found.");
             printSlowly("The next day, you challenge him to a rap battle inside the venue, with his family and most of the city in attendance. ");
@@ -105,7 +105,7 @@ namespace Simple_Base_Code
 
 
             roomsCompleted[0] = true;
-            printSlowly("You head back to where you originally saw tim bluehelmet, you look around and see three doors.");
+            printSlowly("You head back to where you originally saw Tim Bluehelmet, you look around and see three doors.");
             printSlowly("One door has a radio next to it.");
             printSlowly("The second door has a sign in front that says Buy Crypto Here.");
             printSlowly("The last door has an advertisement for a new gaming console.");
@@ -155,7 +155,7 @@ namespace Simple_Base_Code
                         }
                         else
                         {
-                            printSlowly("You enter the second room.");
+                            printSlowly("You enter the third room.");
                             roomNum = 3;
                             bad = false;
                         }

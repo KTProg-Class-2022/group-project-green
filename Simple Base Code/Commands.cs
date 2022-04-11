@@ -14,7 +14,17 @@ namespace Simple_Base_Code
 
         public void addItem()
         {
-            
+         /* Item psudo 
+          
+          if(item is in room )
+            if(inventory is full)
+            //no add/ drop item
+
+            else
+            //add tiem
+           
+          
+          */   
          
             
         }
