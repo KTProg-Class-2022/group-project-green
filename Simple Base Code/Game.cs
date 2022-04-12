@@ -9,7 +9,7 @@ namespace Simple_Base_Code
 
         //enable slow mode
         //if false will make text go fast
-        bool slowMode = true;
+        bool slowMode = false;
 
 
         public Game()

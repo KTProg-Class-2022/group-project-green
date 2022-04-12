@@ -84,7 +84,7 @@ namespace Simple_Base_Code
 			{
 				commands.BosnianRoulette(mastermindgame);
 			}*/
-
+			Console.OutputEncoding = System.Text.Encoding.UTF8;
 			Game game = new Game();
 			game.StartGame();
 		}
