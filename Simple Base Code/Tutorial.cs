@@ -132,7 +132,10 @@ namespace Simple_Base_Code
                 }
             }
 
-
+            printSlowly("On the way downyou find a small box on the floor containing what you think are circus peanuts but look sort of like packing peanuts, with the words Bosnian Roulette on them");
+            printSlowly("On the box it says chance to gain great power, but chance you loose it all");
+            printSlowly("you pick it up it might be useful after all");
+            printSlowly("when you finally get down the stairs");
 
             /*Ella second half*/
 

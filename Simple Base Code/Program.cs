@@ -86,7 +86,10 @@ namespace Simple_Base_Code
 			}*/
 
 			Game game = new Game();
-			game.StartGame();
+			while (game.StartGame() == 1)
+            {
+
+            }
 		}
 
 	}

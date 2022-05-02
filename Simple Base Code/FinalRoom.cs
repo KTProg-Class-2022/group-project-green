@@ -7,6 +7,7 @@ namespace Simple_Base_Code
     class FinalRoom
     {
         bool Slowmode;
+        public bool die = false;
         public void printSlowly(string String)
         {
             if (Slowmode)
@@ -61,7 +62,7 @@ namespace Simple_Base_Code
             //Console.WriteLine(lines[index]);
             Mastermind mastermindgame = new Mastermind(lines[index]);
             bool finishedThis = false;
-            while (!finishedThis)
+            while (!finishedThis && die == false)
             {
                 Console.WriteLine("Enter a command or Guess a word help to see commands");
                 string input = Console.ReadLine();
@@ -78,7 +79,20 @@ namespace Simple_Base_Code
                     case "check-items":
                         Console.WriteLine("there are no items");
                         break;
-
+                    case "bosnian-Roulette":
+                        Random rnd = new Random();
+                        int coinflip = rnd.Next(2);
+                        if (coinflip == 1)
+                        {
+                            mastermindgame.getNext3Chars();
+                        }
+                        else
+                        {
+                            Console.WriteLine("wait that was a packing peanut");
+                            Console.WriteLine("you died");
+                            die = true;
+                        }
+                        break;
                     default:
                         if (mastermindgame.guess(input) == true)
                         {
@@ -87,13 +101,15 @@ namespace Simple_Base_Code
                         break;
                 }
             }
-
-            printSlowly("With the Air Conditioner successfully open, you carefully dump the whole jar into the machine.");
-            printSlowly("It sputters and shakes and eventually coughs and ejects the contents of the jar through the vents of the building.");
-            printSlowly("Tim Bluehelmet, being so cringe he was demoted to janitor, happens to be standing in front of a vent, and inhales some of Slobby John's plague sauce.");
-            printSlowly("The rest of the UN building also happens to inhale some of Slobby John's plague sauce, as well as the whole city and a significant portion of Bosnia.");
-            printSlowly("The plague seems to make people really embarrased");
-            printSlowly("In the aftermath of the highly embarrassing event, you, Vaansh Mansharimani, are at last declared a war criminal. Great success!");
+            if (!die)
+            {
+                printSlowly("With the Air Conditioner successfully open, you carefully dump the whole jar into the machine.");
+                printSlowly("It sputters and shakes and eventually coughs and ejects the contents of the jar through the vents of the building.");
+                printSlowly("Tim Bluehelmet, being so cringe he was demoted to janitor, happens to be standing in front of a vent, and inhales some of Slobby John's plague sauce.");
+                printSlowly("The rest of the UN building also happens to inhale some of Slobby John's plague sauce, as well as the whole city and a significant portion of Bosnia.");
+                printSlowly("The plague seems to make people really embarrased");
+                printSlowly("In the aftermath of the highly embarrassing event, you, Vaansh Mansharimani, are at last declared a war criminal. Great success!");
+            }
 
 
 

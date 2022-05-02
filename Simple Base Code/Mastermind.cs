@@ -19,6 +19,29 @@ namespace Simple_Base_Code
             completed = false;
           
         }
+
+        int pos = 0;
+        
+        public void getNext3Chars()
+        {
+            Console.WriteLine("You ate a circus peanut");
+            if (pos + 3 < password.Length-1)
+            {
+                pos = pos + 3;
+                Console.WriteLine("you now know another 3 characters");
+                Console.Write("known Characters : ");
+                for(int i = 0; i < pos; i++)
+                {
+                    Console.Write(password[i]);
+                }
+                Console.WriteLine("");
+            }
+            else
+            {
+                Console.WriteLine("you now know the full password it is: " + password);
+            }
+        }
+
         public int getLength()
         {
             return password.Length;
