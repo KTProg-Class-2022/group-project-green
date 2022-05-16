@@ -27,7 +27,6 @@ namespace Simple_Base_Code
                 Console.WriteLine("");
                 Console.SetCursorPosition(Console.CursorLeft, Console.CursorTop - 1);
 
-
                 for (int i = 0; i < String.Length; i++)
                 {
                     Console.Write(String[i]);

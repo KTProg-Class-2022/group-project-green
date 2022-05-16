@@ -50,11 +50,12 @@ namespace Simple_Base_Code
             printSlowly("Seeing this, a mysterious figure (not drake) approaches you.");
             printSlowly("\tSlobby John: I see you also are a pranker of the UN, nice work.");
             printSlowly("\tI have a favor to ask of you, fellow prankster, whatever your name is.");
-            printSlowly("\tTake this jar of Slobby John's Magic Juice (Patent Pending) and pour it into the UN building's central air conditioner.");
+            printSlowly("\tTake this jar of Slobby John's Magic Juice (Patent Pending) and pour it onto Slobby Johns big az and put it on top of the UN building's central air conditioner.");
             printSlowly("\tPretty please with a cherry on top.");
             printSlowly("This \"Slobby John\" guy hands you a small jam jar full of what looks to be orange juice with a box of laxatives (including the cardboard box) floating in it. ");
+            printSlowly("\"Slobby John\" also hands your a vending machine burger with the Big Az printed on it")
             printSlowly("Since you don't really have any other plans, what with the rocket being unavailable and all that, you decide to actually do what he just said.");
-            printSlowly("You make your way into the UN's Home Base with the jar of magic juice carefully hidden (by holding it behind your back).");
+            printSlowly("You make your way into the UN's Home Base with the jar of magic juice and the big az carefully hidden (by holding it behind your back).");
             printSlowly("Sneaking loudly into the Air Conditioning room, you discover the central air conditioner is locked with, shockingly, a big word padlock.");
             printSlowly("Unfortunately, there are no clues to be found in this room, being completely empty aside from the air conditioner. You will have to totally guess this word.");
 
@@ -103,10 +104,10 @@ namespace Simple_Base_Code
             }
             if (!die)
             {
-                printSlowly("With the Air Conditioner successfully open, you carefully dump the whole jar into the machine.");
-                printSlowly("It sputters and shakes and eventually coughs and ejects the contents of the jar through the vents of the building.");
-                printSlowly("Tim Bluehelmet, being so cringe he was demoted to janitor, happens to be standing in front of a vent, and inhales some of Slobby John's plague sauce.");
-                printSlowly("The rest of the UN building also happens to inhale some of Slobby John's plague sauce, as well as the whole city and a significant portion of Bosnia.");
+                printSlowly("With the Air Conditioner successfully open, you carefully put the burger on top of the machine then dump the whole jar onto the burger.");
+                printSlowly("The burger disolves into an unknown acid(likely a reaction from the sodium contents of the burger) causing the air conditioning to sputter and shake and eventually coughs and ejects the contents of the jar through the vents of the building.");
+                printSlowly("Tim Bluehelmet, being so cringe he was demoted to janitor, happens to be standing in front of a vent, and inhales some of Slobby John's big az acid.");
+                printSlowly("The rest of the UN building also happens to inhale some of Slobby John's big az acid, as well as the whole city and a significant portion of Bosnia.");
                 printSlowly("The plague seems to make people really embarrased");
                 printSlowly("In the aftermath of the highly embarrassing event, you, Vaansh Mansharimani, are at last declared a war criminal. Great success!");
             }
